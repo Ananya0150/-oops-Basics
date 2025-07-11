@@ -28,3 +28,27 @@ print(my_Circle.pi)
 print(my_Circle.radius)
 print(my_Circle.area)
 print(my_Circle.get_circumfrence())
+
+
+
+class Animal():
+   def __init__(self):
+      print("ANIMAL CREATED")
+   def who_am_i(self):
+      print("I am an animal")
+   def eat(self):
+      print("I am eating")
+class Dog(Animal):
+   def __init__(self):
+      Animal.__init__(self)
+      print("Dog Created")
+   def eat(self):
+      print("I am a dog and eating")
+   def bark(self):
+      print("WOOF!")
+mydog = Dog()
+print(mydog.eat())
+print(mydog.bark())
+myanimal = Animal()
+print(myanimal.eat())
+print(myanimal.who_am_i())
